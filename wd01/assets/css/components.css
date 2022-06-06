@@ -1,0 +1,157 @@
+header {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)),
+    url("https://picsum.photos/id/537/1920/1080");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  padding: 15px;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  background-color: #234;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.5s ease-in-out;
+  padding: 5px;
+}
+
+.navigation a:hover {
+  border-color: #fff;
+}
+
+h2:hover {
+  transform: scale(1.1);
+}
+
+h2::after,
+h2::before {
+  position: absolute;
+  transition: 400ms;
+}
+
+h2::after {
+  width: 200px;
+  bottom: 125%;
+  text-align: center;
+  left: calc(50% - 100px);
+  content: attr(data-tooltip);
+  color: #fff;
+  background-color: #234;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+h2::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #234;
+  bottom: 105%;
+  left: calc(50% - 10px);
+}
+
+h2:hover::after,
+h2:hover::before {
+  opacity: 1;
+}
+
+.image,
+.image-two,
+.image-3 {
+  width: 100%;
+}
+
+.image:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  transition-duration: 1ms;
+}
+
+.image-two:hover {
+  cursor: crosshair;
+  transform: scale(1.02);
+  transition-duration: 400ms;
+}
+
+iframe {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.java-background {
+  background-image: linear-gradient(to top,
+      rgba(255, 255, 255, 0.25),
+      rgba(251, 251, 251, 0.75)),
+    url(../images/alienplanet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.alignment {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #234;
+  padding: 10px 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #234;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    justify-content: center;
+  }
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.footer-column a:hover {
+  color: #ffff00;
+  transition: 0.3s ease-in-out;
+}
