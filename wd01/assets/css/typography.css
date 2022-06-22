@@ -34,16 +34,19 @@ figcaption {
   font-size: 14px;
 }
 
+ /* Contact Us and Observatory Hours*/
 .h,
 .i {
   font-size: 24px;
   text-align: center;
 }
 
+/* Capitalize Address in Contact Us */
 .address-cap {
   text-transform: capitalize;
 }
 
+/* Javascript page Form button and input */
 button,
 input {
   color: #234;
@@ -51,6 +54,7 @@ input {
   text-transform: capitalize;
 }
 
+/* Javascript page unordered list elements */
 ul {
   list-style-position: inside;
   font-size: 18px;
